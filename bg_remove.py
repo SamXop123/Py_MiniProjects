@@ -1,3 +1,6 @@
+
+# Seamlessly remove background from any object using this code
+
 from rembg import remove
 from PIL import Image
 
