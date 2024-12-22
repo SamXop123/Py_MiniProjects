@@ -1,6 +1,5 @@
-#MINI PROJECT 1
-#Guess the Number game
 
+#Guess the Number game
 
 import random
 
