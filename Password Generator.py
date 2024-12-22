@@ -1,5 +1,6 @@
-#MINI PROJECT #2
-#PASSWORD GENERATOR
+
+# PASSWORD GENERATOR
+
 print()
 
 import random 
