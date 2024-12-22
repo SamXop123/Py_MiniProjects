@@ -1,4 +1,8 @@
 
+# Bond Length and Bond Angle calculator
+
+# Using coordinate input of the atoms within the molecule
+
 import math
 
 # Calculating bond length
