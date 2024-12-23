@@ -3,16 +3,15 @@ import random
 def snake_water_gun():
     print("\n---- SNAKE WATER GUN ----\n")
 
-    # Options for the game
+    # Options
     choices = ["snake", "water", "gun"]
 
-    # Random choice by the computer
+    # Generate Random choice
     computer_choice = random.choice(choices)
 
-    # Get the user's choice
+    # Get user's choice
     user_choice = input("Enter your choice (Snake/Water/Gun): ").strip().lower()
 
-    # Validate user input
     if user_choice not in choices:
         print("Invalid choice! Please select either Snake, Water, or Gun.")
         return
@@ -31,7 +30,6 @@ def snake_water_gun():
     else:
         print("Computer wins!")
 
-# Run the game
 snake_water_gun()
 
 #ANOTHER METHOD :
