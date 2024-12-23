@@ -1,31 +1,38 @@
-
-print()
-print("----SNAKE WATER GUN----") 
-print()
-
 import random
 
-game = ["Snake", "Water", "Gun"]
+def snake_water_gun():
+    print("\n---- SNAKE WATER GUN ----\n")
 
-auto_choice = random.choice(game)
-print(auto_choice)
-user_choice = input("Enter your choice: ")
+    # Options for the game
+    choices = ["snake", "water", "gun"]
 
-user_choice = user_choice.lower()
-auto_choice = auto_choice.lower()
+    # Random choice by the computer
+    computer_choice = random.choice(choices)
 
-if (user_choice == auto_choice):
-    print("Draw!")
+    # Get the user's choice
+    user_choice = input("Enter your choice (Snake/Water/Gun): ").strip().lower()
 
-elif (user_choice == "snake" and auto_choice == "water") or \
-     (user_choice == "water" and auto_choice == "gun") or \
-     (user_choice == "gun" and auto_choice == "snake"):
-    print("You won!")
+    # Validate user input
+    if user_choice not in choices:
+        print("Invalid choice! Please select either Snake, Water, or Gun.")
+        return
 
-else:
-    print("Computer Wins")
+    # Display choices
+    print(f"\nYou chose: {user_choice.capitalize()}")
+    print(f"Computer chose: {computer_choice.capitalize()}")
 
-print("#----------------------------------------")
+    # Determine the result
+    if user_choice == computer_choice:
+        print("It's a draw!")
+    elif (user_choice == "snake" and computer_choice == "water") or \
+         (user_choice == "water" and computer_choice == "gun") or \
+         (user_choice == "gun" and computer_choice == "snake"):
+        print("You won!")
+    else:
+        print("Computer wins!")
+
+# Run the game
+snake_water_gun()
 
 #ANOTHER METHOD :
 
