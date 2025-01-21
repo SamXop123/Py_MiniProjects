@@ -1,3 +1,9 @@
+"""
+Web browsers, rely on MIME types (also known as media types), to determine how to display files that live on the web. 
+When you download a file from a web server, that server sends an HTTP header, along with the file itself, indicating the file’s media type. 
+For instance, the media type for a GIF is image/gif, and the media type for a JPEG is image/jpeg. 
+To determine the media type for a file, a web server typically looks at the file’s extension, mapping one to the other.
+"""
 
 extension = input("File name: ").strip().lower()
 
