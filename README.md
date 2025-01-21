@@ -1,4 +1,4 @@
 ## Python mini Projects! 
 
-<h3> Created in free time <3 </h3>
+<h3> List of python codes that are fun to do as well as boosts creativity and skills. </h3>
 
