@@ -4,8 +4,8 @@
 from rembg import remove
 from PIL import Image
 
-input_path = 'thor.png'
-output_path = 'thor_rem.png'
+input_path = 'filename.png'
+output_path = 'filename_bgrem.png'
 
 # Open the input image
 inp = Image.open(input_path)
@@ -17,5 +17,5 @@ output = remove(inp)
 output.save(output_path)
 
 # Open the new image
-Image.open("thor_rem.png")
+Image.open("filename_bgrem.png")
 
