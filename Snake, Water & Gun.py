@@ -3,24 +3,19 @@ import random
 def snake_water_gun():
     print("\n---- SNAKE WATER GUN ----\n")
 
-    # Options
     choices = ["snake", "water", "gun"]
 
-    # Generate Random choice
     computer_choice = random.choice(choices)
 
-    # Get user's choice
     user_choice = input("Enter your choice (Snake/Water/Gun): ").strip().lower()
 
     if user_choice not in choices:
         print("Invalid choice! Please select either Snake, Water, or Gun.")
         return
 
-    # Display choices
     print(f"\nYou chose: {user_choice.capitalize()}")
     print(f"Computer chose: {computer_choice.capitalize()}")
 
-    # Determine the result
     if user_choice == computer_choice:
         print("It's a draw!")
     elif (user_choice == "snake" and computer_choice == "water") or \
@@ -31,6 +26,8 @@ def snake_water_gun():
         print("Computer wins!")
 
 snake_water_gun()
+
+#---------------------------------------------------------------------------
 
 #ANOTHER METHOD :
 
