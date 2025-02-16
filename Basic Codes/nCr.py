@@ -1,19 +1,22 @@
-
-print("To find nCr")
+print("To find nCr (Combinations)")
 
 def main():
     while True:
         try:
             n = int(input("Enter n: "))
             r = int(input("Enter r: "))
-            pnc(n,r)
-            break
-        except ValueError as e:
-            print(f"Error: {e}. \nPlease enter a valid integer number.")
 
-def pnc(n,r):
-    nCr = factorial(n)/(factorial(r)*factorial(n-r))
-    print(nCr)
+            if r > n:
+                print("Error: r cannot be greater than n. Please enter valid values.")
+                continue 
+
+            print(f"nCr = {calculate_ncr(n, r)}")
+            break
+        except ValueError:
+            print("Error: Please enter valid integer values.")
+
+def calculate_ncr(n, r):
+    return factorial(n) // (factorial(r) * factorial(n - r))
 
 def factorial(x):
     fact = 1
