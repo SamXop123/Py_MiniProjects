@@ -8,4 +8,4 @@ def alphabet_position(text):
     return result.strip()
 
 text = input("Enter your string:").strip()
-alphabet_position(text)
+print(alphabet_position(text))
