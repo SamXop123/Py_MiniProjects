@@ -15,7 +15,6 @@ print("Octal:", oct(dec_num)[2:])
 # ================================================
 
 # Octal to Binary
-
 oct_num = input("Enter an octal number: ")
 dec_num = int(oct_num, 8)
 print("Binary:", bin(dec_num)[2:])
