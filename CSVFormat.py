@@ -1,3 +1,5 @@
+# This can be used to convert a normal csv file into a beautiful tabular form in ASCII Art style.
+
 import csv
 import sys
 from tabulate import tabulate
@@ -25,3 +27,5 @@ def tabulize(file):
 
 if __name__ == "__main__":
     main()
+
+#! Run using `python CSVFormat.py nameOfFile.csv` in terminal
