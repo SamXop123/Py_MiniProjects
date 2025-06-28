@@ -25,9 +25,9 @@ def octal_to_binary(octal):
 def octal_to_hexadecimal(octal):
     return decimal_to_hexadecimal(octal_to_decimal(octal))
 
-# Main program loop
+
 while True:
-    print("\n🔢 Universal Number Converter 🔢")
+    print("\nUNIVERSAL NUMBER CONVERTER!")
     print("1️⃣ Binary to Decimal")
     print("2️⃣ Octal to Decimal")
     print("3️⃣ Decimal to Binary")
@@ -70,7 +70,7 @@ while True:
             octal = input("Enter an octal number: ")
             print(f"Hexadecimal: {octal_to_hexadecimal(octal)}")
         case "10":
-            print("🚀 Exiting...")
+            print("Exiting...")
             break
         case _:
             print("❌ Invalid choice! Please enter a number between 1-10.")
